@@ -15,7 +15,7 @@ public class fruitMove : MonoBehaviour
     
     void Start()
     {
-        InvokeRepeating("moveFruit",startDelay,repeatRate);
+       
     }
 
     // Update is called once per frame
@@ -38,19 +38,5 @@ public class fruitMove : MonoBehaviour
         
 
             
-    }
 
-    IEnumerator moveFruit() {
-        Debug.Log("hey");
-        yield return new WaitForSeconds((float)0.2);
-        transform.position = (Vector2) transform.position + new Vector2((float)0.5, 0);
-        yield return new WaitForSeconds((float)0.2);
-        transform.position = (Vector2) transform.position + new Vector2((float)0.5, 0);
-        yield return new WaitForSeconds((float)0.2);
-        transform.position = (Vector2) transform.position - new Vector2((float)0.5, 0);
-        yield return new WaitForSeconds((float)0.2);
-        transform.position = (Vector2) transform.position - new Vector2((float)0.5, 0);
-
-
-    }
 }
