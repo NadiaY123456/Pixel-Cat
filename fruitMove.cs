@@ -31,7 +31,6 @@ public class fruitMove : MonoBehaviour
             ScoreMonitor.instance.AddPoint();
             source.PlayOneShot(clip);
 
-            //Debug.Log("hai :3");
             //dirtParticle.Play(); 
         } 
 
